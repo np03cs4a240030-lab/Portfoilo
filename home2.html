@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayush Neupane — Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/4c2fa54434.js" crossorigin="anonymous"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style2.css">
+
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="top">
+    <div class="nav-inner container">
+      <a class="brand" href="#top">
+        <img src="logo1.png" alt="Ayush logo" class="logo" href="#top">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="nav" id="nav" aria-hidden="true">
+        <ul class="nav-list" id="navList" role="menu">
+          <li role="none"><a role="menuitem" href="#top" class="nav-link active">Home</a></li>
+          <li role="none"><a role="menuitem" href="#about" class="nav-link">About</a></li>
+          <li role="none"><a role="menuitem" href="#services" class="nav-link">Services</a></li>
+          <li role="none"><a role="menuitem" href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li role="none"><a role="menuitem" href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-close" role="none">
+            <button id="navClose" aria-label="Close menu"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i></button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Theme toggle -->
+      <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark / light theme">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero reveal">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">Web & Graphic Designer</p>
+        <h1>Hi, I'm <span class="accent">Ayush</span> Neupane<br><span class="muted">from Kathmandu, Nepal</span></h1>
+        <p class="lead">I build clean digital experiences — websites, brand visuals, and team workflows that get results.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#portfolio">View My Work</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about reveal">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">About Me</h2>
+          <p class="about-paragraph">Hey, I’m Ayush — a 20-year-old Computer Science student at Herald College who loves creating thoughtful websites and brand visuals. I enjoy turning ideas into clean designs and functional products. Outside work, I’m probably on the football pitch or exploring a new cafe.</p>
+
+          <div class="tabs">
+            <div class="tab-titles">
+              <button class="tab-link active" data-target="skills">Skills</button>
+              <button class="tab-link" data-target="experience">Experience</button>
+              <button class="tab-link" data-target="education">Education</button>
+            </div>
+
+            <div class="tab-contents">
+              <div class="tab-panel active" id="skills">
+                <ul>
+                  <li><strong>Graphic Design</strong> — Logos, posters, thumbnails, social posts</li>
+                  <li><strong>Web Development</strong> — HTML, CSS, JavaScript, responsive UI</li>
+                </ul>
+              </div>
+              <div class="tab-panel" id="experience">
+                <ul>
+                  <li><strong>2024 – Present</strong> — Co-owner, Lazimpat Boutique Hotel</li>
+                  <li><strong>Nov 1, 2023 – Present</strong> — CAO, Pashupati HR Solution Pvt. Ltd.</li>
+                  <li><strong>2024</strong> — Internship at Yuwa Nepal (Graphic Designer)</li>
+                </ul>
+              </div>
+              <div class="tab-panel" id="education">
+                <ul>
+                  <li><strong>2024 – Present</strong> — BSc (Hons) Computer Science, Herald College</li>
+                  <li><strong>Class of 2024</strong> — Ullens School</li>
+                  <li><strong>Graduated School At 2022</strong> — Chelsea World School</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="about-right reveal">
+          <img src="user.jpeg" alt="Ayush" class="about-photo">
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services reveal">
+    <div class="container">
+      <h2 class="section-title">My Services</h2>
+      <div class="services-grid">
+        <article class="card service-card">
+          <i class="fa-solid fa-code service-icon" aria-hidden="true"></i>
+          <h3>Web Design</h3>
+          <p>Clean, responsive websites with attention to both UI and performance.</p>
+          <a class="link-more" href="#">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+
+        <article class="card service-card">
+          <i class="fa-solid fa-pen-ruler service-icon" aria-hidden="true"></i>
+          <h3>Graphic Design</h3>
+          <p>Branding, social assets, thumbnails, and print-ready designs with a modern aesthetic.</p>
+          <a class="link-more" href="#">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+
+        <article class="card service-card">
+          <i class="fa-solid fa-user-plus service-icon" aria-hidden="true"></i>
+          <h3>Team Management</h3>
+          <p>Coordination, communication, and delivery — helping teams ship great work.</p>
+          <a class="link-more" href="#">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section portfolio reveal">
+    <div class="container">
+      <h2 class="section-title">My Works</h2>
+      <div class="works-grid">
+        <div class="work-card card">
+          <img src="work1.png" alt="Weather Web">
+          <div class="work-info">
+            <div>
+              <h3>Weather Web</h3>
+              <p>Academic project integrating external APIs to fetch real-time weather data and caching for performance.</p>
+            </div>
+            <a class="work-link" href="#"><i class="fa-solid fa-square-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="work-card card">
+          <img src="work2.png" alt="Pashupati HR Website">
+          <div class="work-info">
+            <div>
+              <h3>Pashupati HR Website</h3>
+              <p>Complete business site built to showcase services and improve client conversions.</p>
+            </div>
+            <a class="work-link" href="https://www.pashupatihr.com.np/" target="_blank" rel="noopener"><i class="fa-solid fa-square-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="work-card card">
+          <img src="work3.png" alt="Travel Agency Website">
+          <div class="work-info">
+            <div>
+              <h3>Travel Agency Website</h3>
+              <p>Final school project with frontend and backend simulation and authentication flows.</p>
+            </div>
+            <a class="work-link" href="#"><i class="fa-solid fa-square-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center">
+        <a class="btn primary" href="#">See More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact reveal">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-details">
+          <h2 class="section-title">Contact Me</h2>
+          <p class="contact-line"><i class="fa-solid fa-envelope" aria-hidden="true"></i> cao.ayushneupane@gmail.com</p>
+          <p class="contact-line"><i class="fa-solid fa-phone" aria-hidden="true"></i> +977 9823608011</p>
+
+          <div class="social">
+            <a href="https://www.facebook.com/ayush.neupane205" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/n_ayushhh/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </div>
+
+          <a class="btn outline" href="Ayush_Neupane_CV.pdf" download>Download CV</a>
+        </div>
+
+        <div class="contact-form reveal">
+          <form name="submit-to-google-sheet" class="form">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <div class="form-row">
+              <button type="submit" class="btn primary">Send Message</button>
+              <span id="msg" class="form-msg" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <p>Made  by Ayush Neupane • © All rights reserved  <span id="year"></span>.</p>
+    </div>
+  </section>
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" title="Back to top" aria-label="Back to top"><i class="fa-solid fa-chevron-up" aria-hidden="true"></i></button>
+
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
+
+</body>
+</html>
